@@ -1,9 +1,9 @@
 # Precinct Level Election Returns
-The goal of this project is to gather, parse, process, and validate the precinct level returns from the 2024 election. Starting with the state of Pennsylvania. To, hopefully, speed this up I'm trying to leverage generative AI models, when possible, for automating some of the parsing and processing steps. 
+The goal of this project is to gather, parse, process, and validate the precinct level returns from the 2024 election. Specifically, the state of Pennsylvania. To, hopefully, speed this up I'm trying to leverage generative AI models, when possible, for automating some of the parsing and processing steps. This is mostly an exercise to build chops in managing this kind of data, and finding ways to make it possible for a single person. In short, this is a personal project that pales in comparsion to a full-scale, comprehensive dataset, like the work of the amazing [OpenElections Project](https://github.com/openelections). 
 
 As of now, there is a consistently performing prompt-based approach for parsing "single precinct per page" (SPPP) type PDF return documents.
 
-Raw data has been gathered for all counties in PA, save for 6 counties which lack precinct-level return data. 
+Right now I have links to the data for all counties but the following 6:
 * 015	Bradford County
 * 031	Clarion County
 * 037	Columbia County
@@ -11,13 +11,12 @@ Raw data has been gathered for all counties in PA, save for 6 counties which lac
 * 063	Indiana County
 * 113	Sullivan County
 
-**Of note is the fact that these counties contain roughly 230,000 likely voters in a race decided by 120,000 votes.** 
 
-# Method
+# Goals
 * **Parsing** 
   * Converting the raw return data into a common format.
   * *Progress*
-    * Working SPPP parser.
+    * Working SPPP parser. Uses GPT to parse the extracted text of PDFs.
     * Working ClarityElection xml parser. 
 * **Processing** 
   * Converting races, parties, candidates to common values. 
@@ -29,6 +28,9 @@ Raw data has been gathered for all counties in PA, save for 6 counties which lac
   * Pipeline for randomly selecting target data to validate manually.
   * *Progress*
     * None. Oof.
+* **Visualization**
+  * Leverage the Shapefiles associated with the VTDST20 identifiers to quickly make [choropleth](https://en.wikipedia.org/wiki/Choropleth_map) illustrations.
+  * Load shapefiles into [Manim](https://docs.manim.community/en/stable/index.html) [Polygon](https://docs.manim.community/en/stable/reference/manim.mobject.geometry.polygram.Polygon.html) objects for manipulation in scenes. 
 
 # PA Progress
 The following table contains the current progress in parsing and processing the county precinct data.
