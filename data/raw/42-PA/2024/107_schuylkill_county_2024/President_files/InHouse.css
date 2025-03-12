@@ -1,0 +1,269 @@
+a:link       { color: rgb(0, 0, 255) }
+a:active     { color: rgb(128, 0, 128) }
+a:visited    { color: rgb(128, 0, 128) }
+body         {
+	font-family: "Times New Roman", serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10pt;
+	background-color: rgb(217, 217, 217);
+	color: rgb(0, 0, 0);
+	text-align: center;
+}
+button       { font-size: 8pt; font-weight: bold; font-family: "Century Gothic", Arial, Helvetica, sans-serif; border-style: solid; 
+               border-width: 1pt;
+			   background-color: rgb(51, 0, 153); color: rgb(255, 255, 255) }
+caption      { font-size: 14pt; font-style: normal; font-family: "Century Gothic", Arial, Helvetica, sans-serif;
+			   color: rgb(51, 0, 153) }
+fieldset     { font-family: Arial, Arial, Helvetica, sans-serif; font-size: 8pt; font-style: normal; 
+               border-style: solid; border-width: 1pt;
+			   color: rgb(11, 0, 0) }
+h1           { font-weight: normal; font-style: normal; font-size: 24pt; font-family: "Century Gothic", Arial, Helvetica, sans-serif; text-align: center;
+			    color: rgb(51, 0, 153) }
+h2           { font-family: "Century Gothic", Arial, Helvetica, sans-serif; font-style: normal; 
+               font-size: 18pt; font-weight: normal;
+			    color: rgb(51, 0, 153) }
+h3           { font-family: "Century Gothic", Arial, Helvetica, sans-serif; font-size: 14pt; 
+               font-weight: normal; font-style: normal;
+			    color: rgb(51, 0, 153) }
+h4           { font-weight: normal; font-size: 12pt; font-style: normal; font-family: "Century Gothic", Arial, Helvetica, sans-serif;
+			    color: rgb(51, 0, 153) }
+h5           { font-size: 10pt; text-align: Center; font-weight: bold; font-family: "Century Gothic", Arial, Helvetica, sans-serif; margin-bottom: 0;
+			    color: rgb(51, 0, 153) }
+h6           { font-family: "Century Gothic", Arial, Helvetica, sans-serif; font-size: 8pt; font-style: 
+               normal; font-weight: normal;
+			    color: rgb(51, 0, 153) }
+label        { font-weight: bold; font-family: "Century Gothic", Arial, Helvetica, sans-serif; font-size: 
+               8pt; color: rgb(0, 0, 0) }
+legend       { font-style: normal; font-size: 8pt; font-family: "Century Gothic", Arial, Helvetica, sans-serif;
+			   color: rgb(51, 0, 153) }
+marquee      { font-family: Arial, Arial, Helvetica, sans-serif; font-size: 14pt }
+select       { font-style: normal; font-family: Arial, Arial, Helvetica, sans-serif; font-size: 8pt; 
+               border-style: solid; border-width: 1pt;
+			   color: rgb(11, 0, 0) }
+table        {
+	font-family: "Times New Roman", serif;
+	vertical-align: top;
+	font-size: 10pt;
+	font-style: normal;
+	font-weight: normal;
+	empty-cells: show;
+			 }
+textarea     { font-style: normal; font-size: 8pt; font-family: Arial, Arial, Helvetica, sans-serif; 
+               border-style: solid; border-width: 1pt;
+			   color: rgb(11, 0, 0) }
+th           { font-family: Arial, Arial, Helvetica, sans-serif; font-style: normal;
+			   color: rgb(0, 0, 0) }
+ul           { list-style-image: url(../images/bullet.gif)}
+ul ul        { list-style-image: url(../images/bullet.gif)}
+ul ul ul     { list-style-image: url(../images/bullet.gif)}
+
+.DarkRow {
+	background-color: #D9D9D9;
+}
+.LightRow {
+	background-color: #FFFFFF;
+}
+.LinkNoUnderline {
+	color: #0000FF;
+	text-decoration: none;
+}
+.LinkNoUnderline a:link,.LinkNoUnderline a:visited,.LinkNoUnderline a:hover,.LinkNoUnderline a:active {
+	color: #0000FF;
+	text-decoration: none;
+}
+
+.DataLabel {
+	font-weight: bold;
+	font-size: 12pt;
+	text-align: right;
+	white-space: nowrap;
+}
+.DataView {
+	font-size: 10pt;
+	color: #00F;
+}
+
+.DataViewCenter {
+	font-size: 10pt;
+	color: #00F;
+	background-color: #FFF;
+	text-align: center;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
+.DataViewLeft {
+	font-size: 10pt;
+	color: #00F;
+	background-color: #FFF;
+	text-align: left;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
+.DataViewRight {
+	font-size: 10pt;
+	color: #00F;
+	background-color: #FFF;
+	text-align: right;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
+.BlueHead {
+	 background-color: #00F;
+	 color: #FFF;
+	 text-align:center;
+}
+
+@media print {
+.dontPrint {display: none;}
+}
+
+.HeaderBar {
+	margin:0px;
+	border:0px;
+	padding:0px;
+	background-color:#9CF;
+	text-align:center;
+	vertical-align:middle;
+}
+
+.HeaderBarLeft {
+	text-align:left;
+	width:20%;
+}
+
+.Buttons {
+	padding:0;
+	margin:0;
+	border-style: outset;
+	background-color: #D9D9D9;
+	height: 18px;
+	width: 18px;
+	cursor: pointer;
+}
+
+.ButtonPad {
+	margin:0;
+	border-style: outset;
+	background-color: #D9D9D9;
+	height: 18px;
+	width: 18px;
+	cursor: pointer;
+	padding-top: 0;
+	padding-right: 5pt;
+	padding-bottom: 0;
+	padding-left: 5pt;
+	white-space: nowrap;
+}
+
+.ButtonPadPicked {
+	margin:0;
+	border-style: inset;
+	background-color: Aqua;
+	height: 18px;
+	width: 18px;
+	cursor: pointer;
+	padding-top: 0;
+	padding-right: 5pt;
+	padding-bottom: 0;
+	padding-left: 5pt;
+	white-space: nowrap;
+}
+
+.ButtonsNatural {
+	padding:0;
+	margin:0;
+	border-style: outset;
+	cursor: pointer;
+}
+
+.Buttons16 {
+	padding:0;
+	margin:0;
+	border-style: outset;
+	background-color: #D9D9D9;
+	height: 16px;
+	width: 16px;
+	cursor: pointer;
+}
+
+.BillsError {
+	font-weight: bold;
+	color: #F00;
+}
+
+
+.center {
+	text-align: center;
+}
+
+.ColHead {
+	font-family: "Century Gothic", Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	font-weight: bold;
+	color: #309;
+	white-space: nowrap;
+	margin-bottom: 0px;
+	text-align: center;
+}
+
+.RightJust {
+	text-align:right;
+}
+
+.FullWide {
+	width:100%;
+}
+
+.Hide {
+	display:none;
+}
+
+.Show {
+	display:inline-block;
+}
+
+.TightCenter {
+	padding:0;
+	margin:0;
+	text-align:center;
+	vertical-align: bottom;
+}
+
+.PadRight {
+	padding-right: 5pt;
+}
+
+table.Lined {
+	border-width: 4px;
+	padding: 2px;
+	border-spacing: 2px;
+	border-style: outset;
+}
+
+table.Lined th {
+	padding: 2px;
+	
+	border-style: inset;
+	border-collapse: collapse;
+
+}
+
+table.Lined td {
+	border-style: inset;
+	border-width: 1px;
+	border-collapse: collapse;
+	border-spacing: 1px;
+	padding: 2px;
+}
+
+table.Lined td.center {
+
+}
+
+table.Lined td.number { 
+
+}

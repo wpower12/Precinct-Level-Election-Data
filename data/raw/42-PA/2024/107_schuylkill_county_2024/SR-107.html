@@ -1,0 +1,659 @@
+<!--wim 05/12/06-->
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<meta http-equiv="REFRESH" content="884;
+ URL=http://www.co.schuylkill.pa.us/info/Close.csp">
+
+<title>Election Precinct Level</title>
+
+<script type="text/javascript" src="SR-107_files/AppNavigate.js"></script>
+
+<script language="JavaScript">
+<!--
+function ExitApp(Where) {
+	location.href = Where;
+	return true;
+}
+
+function PrecinctDetail(Precinct) {
+		cspHttpServerMethod('4A_22OxAa4vfOkTGHA02taECDQhKIK0AKt_WVeqJZAfygqlJzG$GHlz4q$1nYLjHqpjQn8PQXQ0UQUerfpy_tPcCWtDbwQf79OGB29CaFbA-',Precinct);
+	 document.location.href = '/info/Offices/Election/Election/Results/' + "Info.csp#Plevel";
+	return true;
+	}
+// -->
+</script>
+
+
+
+<link rel="stylesheet" href="SR-107_files/InHouse.css" type="text/css">
+<style type="text/css">
+.ColHead {
+	vertical-align: bottom;
+}
+
+.DataView {
+	background: white;
+}
+
+.Reported {
+	background-color: lightgreen;
+}
+
+.NotReported {
+	background-color: white;
+}
+
+.In {
+	background-color: AquaMarine;
+}
+
+.VerticalTop {
+	vertical-align: top;
+}
+
+</style>
+<script language="JavaScript" type="text/javascript" src="SR-107_files/cspxmlhttp.js"></script><script language="JavaScript" type="text/javascript" src="SR-107_files/cspbroker.js"></script>
+
+</head>
+<body bgcolor="#CCCCCC" text="#000000">
+
+<!-- Header -->
+<!-- Header for App Style csp page -->
+
+<!--
+	Variable								For
+	----------------						-----------------------------
+	Title									Page Title
+	App										Application Name
+	AppBase									Application Base (Set if on Base page of app
+											- Need because don't know how to control "Back"
+	CurrentPageType							Current Page Type ('Lookup','List')
+											- So don't show lookup Icon from same page
+	%session.Data("AppsHome","Path")		Menu Application Ran from (Path)
+	 						 "Name" 								  (Name)
+							 "Icon"									  (Icon)
+	%session.Data(App,"Path")				Application (Path)
+	 				  "Name" 							(Name)
+					  "Icon"							(Icon)
+	%session.Data(App,"LookupPage")			Application Lookup Page
+	%session.Data(App,"GroupPage")			Application Group Page
+	%session.Data(App,"ListPage")			Application List Page
+	%session.Data(App,"List")				Application #Records on List
+	%session.Data(App,"Back","Path")		Application Back to Something (Path)
+	 				  "Back","Name" 									  (Name)
+					  "Back","Icon"										  (Icon)
+	%session.Data(App,"X")					Application eXtra Option Count
+	%session.Data(App,"X",n,"Path")			Application eXtra Option (Path)
+	 				  "X",n,"Name" 									  (Name)
+					  "X",n,"Icon"									  (Icon)
+					  "X",n,"onClick"								  (onClick)
+					  
+-->							 
+
+<style type="text/css">
+<!--
+body
+{
+   background-color: #ffffff !important;
+}
+.HeaderBar {
+	margin:0px;
+	border:0px;
+	padding:0px;
+	background-color:#00F;
+	text-align:center;
+	vertical-align:middle;
+}
+-->
+</style>
+
+				
+
+<table class="HeaderBar" width="100%">
+	<tbody><tr class="HeaderBar">
+    	<td style="text-align:left; width:20%;" class="DontPrint HeaderBar">
+		
+			<table border="0" cellspacing="0" cellpadding="0">
+	      		<tbody><tr>
+				
+					<!-- Home Page -->
+	        		<th>&nbsp;
+						
+					</th>
+					
+					<!-- Applications Home -->
+					
+						<th>
+							<img src="SR-107_files/flag3.gif" width="18" height="18" class="Buttons" alt="Go Back to Election Bureau Home Page" title="Go Back to Election Bureau Home Page" onclick="ExitApp('/info/Offices/Election/Election/Results/Info.csp');">
+						</th>
+					
+					
+					<!-- Application page -->
+					
+					
+					<!-- Lookup: New Search Icon-->
+					
+				
+		    		<!-- Back to Group -->
+          			
+				
+		    		<!-- Back to List -->
+          			
+					
+					<!-- Back to Something -->
+					
+					
+					<!-- eXtra Buttons -->
+					
+
+
+        		</tr>
+    </tbody></table>
+		
+
+			
+	</td>
+   <td class="HeaderBar">
+		<h3 class="HeaderBar">Schuylkill County Election Bureau</h3>
+	</td>
+    <td style="vertical-align:middle; text-align:right; width:20%;" class="DontPrint HeaderBar">
+
+		<table border="0" cellspacing="0" cellpadding="0">
+		 	<tbody><tr>
+				<th>
+				  <img src="SR-107_files/ExitButton.jpg" alt="Please Logout to End Your Session" title="Please Logout to End Your Session" width="18" height="18" class="Buttons" onclick="LogOutUpdate();">
+				</th>
+				<th>
+				  <img src="SR-107_files/refresh_over.gif" alt="Refresh" title="Refresh" width="18" height="18" class="Buttons" onclick="javascript:RefreshPage();">
+				</th>
+		  </tr>
+		</tbody></table>
+      
+	  
+    </td>
+  </tr>
+  
+  
+</tbody></table>
+
+
+
+<h2 align="CENTER" style="margin:0pt;">
+	2024 GENERAL ELECTION 11/05/2024<br>
+	REPRESENTATIVE IN THEGENERAL ASSEMBLY 107TH DISTRICT    <br>Precinct Details
+	
+</h2>
+	
+    
+
+
+
+
+
+<table border="4" align="center" cellpadding="2" cellspacing="1">
+	<tbody><tr class="ColHead">
+		<td>#</td>
+		<td>Precinct</td>
+		<td>Votes</td>
+		
+		
+			<td>Joanne Stehr<br>Republican</td>
+		
+		
+			<td>Write-in</td>
+		
+
+	</tr>
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">57</td>
+			<td class="Reported">Reilly Twp.</td>
+			<td class="DataView center">341</td>
+			
+				
+				
+					<td class="DataView center In">332</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">9</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">119</td>
+			<td class="Reported">Barry Twp.</td>
+			<td class="DataView center">527</td>
+			
+				
+				
+					<td class="DataView center In">511</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">16</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">122</td>
+			<td class="Reported">Eldred Twp.</td>
+			<td class="DataView center">359</td>
+			
+				
+				
+					<td class="DataView center In">347</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">12</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">123</td>
+			<td class="Reported">Foster Twp.</td>
+			<td class="DataView center">131</td>
+			
+				
+				
+					<td class="DataView center In">125</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">6</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">124</td>
+			<td class="Reported">Frailey Twp.</td>
+			<td class="DataView center">167</td>
+			
+				
+				
+					<td class="DataView center In">156</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">11</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">125</td>
+			<td class="Reported">Hegins Twp. East</td>
+			<td class="DataView center">928</td>
+			
+				
+				
+					<td class="DataView center In">909</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">19</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">126</td>
+			<td class="Reported">Hegins Twp. West</td>
+			<td class="DataView center">878</td>
+			
+				
+				
+					<td class="DataView center In">848</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">30</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">127</td>
+			<td class="Reported">Hubley Twp.</td>
+			<td class="DataView center">401</td>
+			
+				
+				
+					<td class="DataView center In">391</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">10</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">134</td>
+			<td class="Reported">Pine Grove North</td>
+			<td class="DataView center">556</td>
+			
+				
+				
+					<td class="DataView center In">540</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">16</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">136</td>
+			<td class="Reported">Pine Grove South</td>
+			<td class="DataView center">359</td>
+			
+				
+				
+					<td class="DataView center In">349</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">10</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">137</td>
+			<td class="Reported">Pine Grove Twp. 1st</td>
+			<td class="DataView center">1009</td>
+			
+				
+				
+					<td class="DataView center In">987</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">22</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">138</td>
+			<td class="Reported">Pine Grove Twp. 2nd</td>
+			<td class="DataView center">1019</td>
+			
+				
+				
+					<td class="DataView center In">995</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">24</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">139</td>
+			<td class="Reported">Porter Twp. East</td>
+			<td class="DataView center">599</td>
+			
+				
+				
+					<td class="DataView center In">583</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">16</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">140</td>
+			<td class="Reported">Porter Twp. West</td>
+			<td class="DataView center">532</td>
+			
+				
+				
+					<td class="DataView center In">518</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">14</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">167</td>
+			<td class="Reported">Tower City</td>
+			<td class="DataView center">529</td>
+			
+				
+				
+					<td class="DataView center In">515</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">14</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">169</td>
+			<td class="Reported">Tremont</td>
+			<td class="DataView center">684</td>
+			
+				
+				
+					<td class="DataView center In">653</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">31</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">171</td>
+			<td class="Reported">Tremont Twp.</td>
+			<td class="DataView center">116</td>
+			
+				
+				
+					<td class="DataView center In">112</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">4</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">172</td>
+			<td class="Reported">Upper Mahantongo Twp.</td>
+			<td class="DataView center">326</td>
+			
+				
+				
+					<td class="DataView center In">322</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">4</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">174</td>
+			<td class="Reported">Washington Twp. North</td>
+			<td class="DataView center">831</td>
+			
+				
+				
+					<td class="DataView center In">805</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">26</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">175</td>
+			<td class="Reported">Washington Twp. South</td>
+			<td class="DataView center">723</td>
+			
+				
+				
+					<td class="DataView center In">711</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">12</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	
+</tbody></table>
+
+
+
+
+
+<h5 style="margin-top: 0" align="center">
+	Copyright © 2025 [ County of Schuylkill   ]. All rights reserved.
+</h5>
+
+
+</body></html>

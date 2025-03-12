@@ -1,0 +1,951 @@
+<!--wim 05/12/06-->
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<meta http-equiv="REFRESH" content="884;
+ URL=http://www.co.schuylkill.pa.us/info/Close.csp">
+
+<title>Election Precinct Level</title>
+
+<script type="text/javascript" src="SR-124_files/AppNavigate.js"></script>
+
+<script language="JavaScript">
+<!--
+function ExitApp(Where) {
+	location.href = Where;
+	return true;
+}
+
+function PrecinctDetail(Precinct) {
+		cspHttpServerMethod('4A_22OxAa4vfOkTGHA02taECDQhKIK0AKt_WVeqJZAfygqlJzG$GHlz4q$1nYLjHqpjQn8PQXQ0UQUerfpy_tPcCWtDbwQf79OGB29CaFbA-',Precinct);
+	 document.location.href = '/info/Offices/Election/Election/Results/' + "Info.csp#Plevel";
+	return true;
+	}
+// -->
+</script>
+
+
+
+<link rel="stylesheet" href="SR-124_files/InHouse.css" type="text/css">
+<style type="text/css">
+.ColHead {
+	vertical-align: bottom;
+}
+
+.DataView {
+	background: white;
+}
+
+.Reported {
+	background-color: lightgreen;
+}
+
+.NotReported {
+	background-color: white;
+}
+
+.In {
+	background-color: AquaMarine;
+}
+
+.VerticalTop {
+	vertical-align: top;
+}
+
+</style>
+<script language="JavaScript" type="text/javascript" src="SR-124_files/cspxmlhttp.js"></script><script language="JavaScript" type="text/javascript" src="SR-124_files/cspbroker.js"></script>
+
+</head>
+<body bgcolor="#CCCCCC" text="#000000">
+
+<!-- Header -->
+<!-- Header for App Style csp page -->
+
+<!--
+	Variable								For
+	----------------						-----------------------------
+	Title									Page Title
+	App										Application Name
+	AppBase									Application Base (Set if on Base page of app
+											- Need because don't know how to control "Back"
+	CurrentPageType							Current Page Type ('Lookup','List')
+											- So don't show lookup Icon from same page
+	%session.Data("AppsHome","Path")		Menu Application Ran from (Path)
+	 						 "Name" 								  (Name)
+							 "Icon"									  (Icon)
+	%session.Data(App,"Path")				Application (Path)
+	 				  "Name" 							(Name)
+					  "Icon"							(Icon)
+	%session.Data(App,"LookupPage")			Application Lookup Page
+	%session.Data(App,"GroupPage")			Application Group Page
+	%session.Data(App,"ListPage")			Application List Page
+	%session.Data(App,"List")				Application #Records on List
+	%session.Data(App,"Back","Path")		Application Back to Something (Path)
+	 				  "Back","Name" 									  (Name)
+					  "Back","Icon"										  (Icon)
+	%session.Data(App,"X")					Application eXtra Option Count
+	%session.Data(App,"X",n,"Path")			Application eXtra Option (Path)
+	 				  "X",n,"Name" 									  (Name)
+					  "X",n,"Icon"									  (Icon)
+					  "X",n,"onClick"								  (onClick)
+					  
+-->							 
+
+<style type="text/css">
+<!--
+body
+{
+   background-color: #ffffff !important;
+}
+.HeaderBar {
+	margin:0px;
+	border:0px;
+	padding:0px;
+	background-color:#00F;
+	text-align:center;
+	vertical-align:middle;
+}
+-->
+</style>
+
+				
+
+<table class="HeaderBar" width="100%">
+	<tbody><tr class="HeaderBar">
+    	<td style="text-align:left; width:20%;" class="DontPrint HeaderBar">
+		
+			<table border="0" cellspacing="0" cellpadding="0">
+	      		<tbody><tr>
+				
+					<!-- Home Page -->
+	        		<th>&nbsp;
+						
+					</th>
+					
+					<!-- Applications Home -->
+					
+						<th>
+							<img src="SR-124_files/flag3.gif" width="18" height="18" class="Buttons" alt="Go Back to Election Bureau Home Page" title="Go Back to Election Bureau Home Page" onclick="ExitApp('/info/Offices/Election/Election/Results/Info.csp');">
+						</th>
+					
+					
+					<!-- Application page -->
+					
+					
+					<!-- Lookup: New Search Icon-->
+					
+				
+		    		<!-- Back to Group -->
+          			
+				
+		    		<!-- Back to List -->
+          			
+					
+					<!-- Back to Something -->
+					
+					
+					<!-- eXtra Buttons -->
+					
+
+
+        		</tr>
+    </tbody></table>
+		
+
+			
+	</td>
+   <td class="HeaderBar">
+		<h3 class="HeaderBar">Schuylkill County Election Bureau</h3>
+	</td>
+    <td style="vertical-align:middle; text-align:right; width:20%;" class="DontPrint HeaderBar">
+
+		<table border="0" cellspacing="0" cellpadding="0">
+		 	<tbody><tr>
+				<th>
+				  <img src="SR-124_files/ExitButton.jpg" alt="Please Logout to End Your Session" title="Please Logout to End Your Session" width="18" height="18" class="Buttons" onclick="LogOutUpdate();">
+				</th>
+				<th>
+				  <img src="SR-124_files/refresh_over.gif" alt="Refresh" title="Refresh" width="18" height="18" class="Buttons" onclick="javascript:RefreshPage();">
+				</th>
+		  </tr>
+		</tbody></table>
+      
+	  
+    </td>
+  </tr>
+  
+  
+</tbody></table>
+
+
+
+<h2 align="CENTER" style="margin:0pt;">
+	2024 GENERAL ELECTION 11/05/2024<br>
+	REPRESENTATIVE IN THE GENERAL ASSEMBLY 124TH DISTRICT   <br>Precinct Details
+	
+</h2>
+	
+    
+
+
+
+
+
+<table border="4" align="center" cellpadding="2" cellspacing="1">
+	<tbody><tr class="ColHead">
+		<td>#</td>
+		<td>Precinct</td>
+		<td>Votes</td>
+		
+		
+			<td>Tina Burns<br>Democratic</td>
+		
+		
+			<td>Jamie Barton<br>Republican</td>
+		
+		
+			<td>Write-in</td>
+		
+
+	</tr>
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">18</td>
+			<td class="Reported">Delano Twp.</td>
+			<td class="DataView center">196</td>
+			
+				
+				
+					<td class="DataView center NotReported">69</td>
+				
+			
+				
+				
+					<td class="DataView center In">127</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">58</td>
+			<td class="Reported">Ryan Twp.</td>
+			<td class="DataView center">938</td>
+			
+				
+				
+					<td class="DataView center NotReported">218</td>
+				
+			
+				
+				
+					<td class="DataView center In">718</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">2</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">80</td>
+			<td class="Reported">Auburn</td>
+			<td class="DataView center">337</td>
+			
+				
+				
+					<td class="DataView center NotReported">79</td>
+				
+			
+				
+				
+					<td class="DataView center In">258</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">81</td>
+			<td class="Reported">Coaldale East</td>
+			<td class="DataView center">470</td>
+			
+				
+				
+					<td class="DataView center NotReported">163</td>
+				
+			
+				
+				
+					<td class="DataView center In">307</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">83</td>
+			<td class="Reported">Coaldale West</td>
+			<td class="DataView center">512</td>
+			
+				
+				
+					<td class="DataView center NotReported">138</td>
+				
+			
+				
+				
+					<td class="DataView center In">374</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">84</td>
+			<td class="Reported">Deer Lake</td>
+			<td class="DataView center">443</td>
+			
+				
+				
+					<td class="DataView center NotReported">108</td>
+				
+			
+				
+				
+					<td class="DataView center In">335</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">85</td>
+			<td class="Reported">East Brunswick Twp.</td>
+			<td class="DataView center">1171</td>
+			
+				
+				
+					<td class="DataView center NotReported">236</td>
+				
+			
+				
+				
+					<td class="DataView center In">934</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">1</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">91</td>
+			<td class="Reported">Landingville</td>
+			<td class="DataView center">91</td>
+			
+				
+				
+					<td class="DataView center NotReported">16</td>
+				
+			
+				
+				
+					<td class="DataView center In">75</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">96</td>
+			<td class="Reported">New Ringgold</td>
+			<td class="DataView center">123</td>
+			
+				
+				
+					<td class="DataView center NotReported">24</td>
+				
+			
+				
+				
+					<td class="DataView center In">99</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">99</td>
+			<td class="Reported">Port Clinton</td>
+			<td class="DataView center">137</td>
+			
+				
+				
+					<td class="DataView center NotReported">36</td>
+				
+			
+				
+				
+					<td class="DataView center In">101</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">101</td>
+			<td class="Reported">Rush Twp. East</td>
+			<td class="DataView center">946</td>
+			
+				
+				
+					<td class="DataView center NotReported">262</td>
+				
+			
+				
+				
+					<td class="DataView center In">681</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">3</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">102</td>
+			<td class="Reported">Rush Twp. West</td>
+			<td class="DataView center">885</td>
+			
+				
+				
+					<td class="DataView center NotReported">202</td>
+				
+			
+				
+				
+					<td class="DataView center In">683</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">103</td>
+			<td class="Reported">Rush Twp. Elixir</td>
+			<td class="DataView center">291</td>
+			
+				
+				
+					<td class="DataView center NotReported">62</td>
+				
+			
+				
+				
+					<td class="DataView center In">228</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">1</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">105</td>
+			<td class="Reported">Schuylkill Twp.</td>
+			<td class="DataView center">622</td>
+			
+				
+				
+					<td class="DataView center NotReported">153</td>
+				
+			
+				
+				
+					<td class="DataView center In">469</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">107</td>
+			<td class="Reported">Tamaqua 1st</td>
+			<td class="DataView center">742</td>
+			
+				
+				
+					<td class="DataView center NotReported">227</td>
+				
+			
+				
+				
+					<td class="DataView center In">515</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">109</td>
+			<td class="Reported">Tamaqua 2nd</td>
+			<td class="DataView center">756</td>
+			
+				
+				
+					<td class="DataView center NotReported">200</td>
+				
+			
+				
+				
+					<td class="DataView center In">554</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">2</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">111</td>
+			<td class="Reported">Tamaqua 3rd</td>
+			<td class="DataView center">754</td>
+			
+				
+				
+					<td class="DataView center NotReported">249</td>
+				
+			
+				
+				
+					<td class="DataView center In">503</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">2</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">112</td>
+			<td class="Reported">Tamaqua 4th</td>
+			<td class="DataView center">506</td>
+			
+				
+				
+					<td class="DataView center NotReported">131</td>
+				
+			
+				
+				
+					<td class="DataView center In">373</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">2</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">114</td>
+			<td class="Reported">Walker Twp.</td>
+			<td class="DataView center">566</td>
+			
+				
+				
+					<td class="DataView center NotReported">96</td>
+				
+			
+				
+				
+					<td class="DataView center In">469</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">1</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">115</td>
+			<td class="Reported">West Brunswick Twp. North</td>
+			<td class="DataView center">1178</td>
+			
+				
+				
+					<td class="DataView center NotReported">311</td>
+				
+			
+				
+				
+					<td class="DataView center In">864</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">3</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">116</td>
+			<td class="Reported">West Brunswick Twp. South</td>
+			<td class="DataView center">867</td>
+			
+				
+				
+					<td class="DataView center NotReported">175</td>
+				
+			
+				
+				
+					<td class="DataView center In">690</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">2</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">117</td>
+			<td class="Reported">West Penn Twp. 2nd</td>
+			<td class="DataView center">644</td>
+			
+				
+				
+					<td class="DataView center NotReported">116</td>
+				
+			
+				
+				
+					<td class="DataView center In">527</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">1</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">118</td>
+			<td class="Reported">West Penn Twp. 1st</td>
+			<td class="DataView center">1259</td>
+			
+				
+				
+					<td class="DataView center NotReported">295</td>
+				
+			
+				
+				
+					<td class="DataView center In">963</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">1</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">132</td>
+			<td class="Reported">Orwigsburg 1st</td>
+			<td class="DataView center">708</td>
+			
+				
+				
+					<td class="DataView center NotReported">186</td>
+				
+			
+				
+				
+					<td class="DataView center In">521</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">1</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">133</td>
+			<td class="Reported">Orwigsburg 2nd</td>
+			<td class="DataView center">953</td>
+			
+				
+				
+					<td class="DataView center NotReported">265</td>
+				
+			
+				
+				
+					<td class="DataView center In">683</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">5</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">166</td>
+			<td class="Reported">South Manheim Twp.</td>
+			<td class="DataView center">1693</td>
+			
+				
+				
+					<td class="DataView center NotReported">372</td>
+				
+			
+				
+				
+					<td class="DataView center In">1318</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">3</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">179</td>
+			<td class="Reported">West Penn Twp. 3rd</td>
+			<td class="DataView center">934</td>
+			
+				
+				
+					<td class="DataView center NotReported">167</td>
+				
+			
+				
+				
+					<td class="DataView center In">766</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">1</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	
+</tbody></table>
+
+
+
+
+
+<h5 style="margin-top: 0" align="center">
+	Copyright © 2025 [ County of Schuylkill   ]. All rights reserved.
+</h5>
+
+
+</body></html>

@@ -1,0 +1,5481 @@
+<!--wim 05/12/06-->
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<meta http-equiv="REFRESH" content="884;
+ URL=http://www.co.schuylkill.pa.us/info/Close.csp">
+
+<title>Election Precinct Level</title>
+
+<script type="text/javascript" src="StateTreasurer_files/AppNavigate.js"></script>
+
+<script language="JavaScript">
+<!--
+function ExitApp(Where) {
+	location.href = Where;
+	return true;
+}
+
+function PrecinctDetail(Precinct) {
+		cspHttpServerMethod('4A_22OxAa4vfOkTGHA02taECDQhKIK0AKt_WVeqJZAfygqlJzG$GHlz4q$1nYLjHqpjQn8PQXQ0UQUerfpy_tPcCWtDbwQf79OGB29CaFbA-',Precinct);
+	 document.location.href = '/info/Offices/Election/Election/Results/' + "Info.csp#Plevel";
+	return true;
+	}
+// -->
+</script>
+
+
+
+<link rel="stylesheet" href="StateTreasurer_files/InHouse.css" type="text/css">
+<style type="text/css">
+.ColHead {
+	vertical-align: bottom;
+}
+
+.DataView {
+	background: white;
+}
+
+.Reported {
+	background-color: lightgreen;
+}
+
+.NotReported {
+	background-color: white;
+}
+
+.In {
+	background-color: AquaMarine;
+}
+
+.VerticalTop {
+	vertical-align: top;
+}
+
+</style>
+<script language="JavaScript" type="text/javascript" src="StateTreasurer_files/cspxmlhttp.js"></script><script language="JavaScript" type="text/javascript" src="StateTreasurer_files/cspbroker.js"></script>
+
+</head>
+<body bgcolor="#CCCCCC" text="#000000">
+
+<!-- Header -->
+<!-- Header for App Style csp page -->
+
+<!--
+	Variable								For
+	----------------						-----------------------------
+	Title									Page Title
+	App										Application Name
+	AppBase									Application Base (Set if on Base page of app
+											- Need because don't know how to control "Back"
+	CurrentPageType							Current Page Type ('Lookup','List')
+											- So don't show lookup Icon from same page
+	%session.Data("AppsHome","Path")		Menu Application Ran from (Path)
+	 						 "Name" 								  (Name)
+							 "Icon"									  (Icon)
+	%session.Data(App,"Path")				Application (Path)
+	 				  "Name" 							(Name)
+					  "Icon"							(Icon)
+	%session.Data(App,"LookupPage")			Application Lookup Page
+	%session.Data(App,"GroupPage")			Application Group Page
+	%session.Data(App,"ListPage")			Application List Page
+	%session.Data(App,"List")				Application #Records on List
+	%session.Data(App,"Back","Path")		Application Back to Something (Path)
+	 				  "Back","Name" 									  (Name)
+					  "Back","Icon"										  (Icon)
+	%session.Data(App,"X")					Application eXtra Option Count
+	%session.Data(App,"X",n,"Path")			Application eXtra Option (Path)
+	 				  "X",n,"Name" 									  (Name)
+					  "X",n,"Icon"									  (Icon)
+					  "X",n,"onClick"								  (onClick)
+					  
+-->							 
+
+<style type="text/css">
+<!--
+body
+{
+   background-color: #ffffff !important;
+}
+.HeaderBar {
+	margin:0px;
+	border:0px;
+	padding:0px;
+	background-color:#00F;
+	text-align:center;
+	vertical-align:middle;
+}
+-->
+</style>
+
+				
+
+<table class="HeaderBar" width="100%">
+	<tbody><tr class="HeaderBar">
+    	<td style="text-align:left; width:20%;" class="DontPrint HeaderBar">
+		
+			<table border="0" cellspacing="0" cellpadding="0">
+	      		<tbody><tr>
+				
+					<!-- Home Page -->
+	        		<th>&nbsp;
+						
+					</th>
+					
+					<!-- Applications Home -->
+					
+						<th>
+							<img src="StateTreasurer_files/flag3.gif" width="18" height="18" class="Buttons" alt="Go Back to Election Bureau Home Page" title="Go Back to Election Bureau Home Page" onclick="ExitApp('/info/Offices/Election/Election/Results/Info.csp');">
+						</th>
+					
+					
+					<!-- Application page -->
+					
+					
+					<!-- Lookup: New Search Icon-->
+					
+				
+		    		<!-- Back to Group -->
+          			
+				
+		    		<!-- Back to List -->
+          			
+					
+					<!-- Back to Something -->
+					
+					
+					<!-- eXtra Buttons -->
+					
+
+
+        		</tr>
+    </tbody></table>
+		
+
+			
+	</td>
+   <td class="HeaderBar">
+		<h3 class="HeaderBar">Schuylkill County Election Bureau</h3>
+	</td>
+    <td style="vertical-align:middle; text-align:right; width:20%;" class="DontPrint HeaderBar">
+
+		<table border="0" cellspacing="0" cellpadding="0">
+		 	<tbody><tr>
+				<th>
+				  <img src="StateTreasurer_files/ExitButton.jpg" alt="Please Logout to End Your Session" title="Please Logout to End Your Session" width="18" height="18" class="Buttons" onclick="LogOutUpdate();">
+				</th>
+				<th>
+				  <img src="StateTreasurer_files/refresh_over.gif" alt="Refresh" title="Refresh" width="18" height="18" class="Buttons" onclick="javascript:RefreshPage();">
+				</th>
+		  </tr>
+		</tbody></table>
+      
+	  
+    </td>
+  </tr>
+  
+  
+</tbody></table>
+
+
+
+<h2 align="CENTER" style="margin:0pt;">
+	2024 GENERAL ELECTION 11/05/2024<br>
+	STATE TREASURER                                         <br>Precinct Details
+	
+</h2>
+	
+    
+
+
+
+
+
+<table border="4" align="center" cellpadding="2" cellspacing="1">
+	<tbody><tr class="ColHead">
+		<td>#</td>
+		<td>Precinct</td>
+		<td>Votes</td>
+		
+		
+			<td>Erin McClelland<br>Democratic</td>
+		
+		
+			<td>Stacy Garrity<br>Republican</td>
+		
+		
+			<td>Nickolas Ciesielski<br>Libertarian</td>
+		
+		
+			<td>Troy Bowman<br>Constitution</td>
+		
+		
+			<td>Chris Foster<br>Forwardist</td>
+		
+		
+			<td>Write-in</td>
+		
+
+	</tr>
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">2</td>
+			<td class="Reported">Ashland 1st</td>
+			<td class="DataView center">551</td>
+			
+				
+				
+					<td class="DataView center NotReported">195</td>
+				
+			
+				
+				
+					<td class="DataView center In">334</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">12</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">7</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">2</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">1</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">5</td>
+			<td class="Reported">Ashland 2nd</td>
+			<td class="DataView center">492</td>
+			
+				
+				
+					<td class="DataView center NotReported">126</td>
+				
+			
+				
+				
+					<td class="DataView center In">352</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">5</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">6</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">3</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">6</td>
+			<td class="Reported">Blythe Twp.</td>
+			<td class="DataView center">438</td>
+			
+				
+				
+					<td class="DataView center NotReported">114</td>
+				
+			
+				
+				
+					<td class="DataView center In">314</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">7</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">3</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">8</td>
+			<td class="Reported">Branch Twp.</td>
+			<td class="DataView center">1071</td>
+			
+				
+				
+					<td class="DataView center NotReported">373</td>
+				
+			
+				
+				
+					<td class="DataView center In">673</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">13</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">7</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">3</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">2</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">10</td>
+			<td class="Reported">Butler Twp. Englewood</td>
+			<td class="DataView center">329</td>
+			
+				
+				
+					<td class="DataView center NotReported">87</td>
+				
+			
+				
+				
+					<td class="DataView center In">234</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">6</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">2</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">11</td>
+			<td class="Reported">Butler Twp. Fountain Springs</td>
+			<td class="DataView center">903</td>
+			
+				
+				
+					<td class="DataView center NotReported">218</td>
+				
+			
+				
+				
+					<td class="DataView center In">665</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">13</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">5</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">2</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">13</td>
+			<td class="Reported">Butler Twp. Lavelle</td>
+			<td class="DataView center">817</td>
+			
+				
+				
+					<td class="DataView center NotReported">174</td>
+				
+			
+				
+				
+					<td class="DataView center In">625</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">9</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">5</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">4</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">14</td>
+			<td class="Reported">Butler Twp. Northeast</td>
+			<td class="DataView center">155</td>
+			
+				
+				
+					<td class="DataView center NotReported">46</td>
+				
+			
+				
+				
+					<td class="DataView center In">102</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">4</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">2</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">1</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">15</td>
+			<td class="Reported">Cass Twp. North</td>
+			<td class="DataView center">189</td>
+			
+				
+				
+					<td class="DataView center NotReported">56</td>
+				
+			
+				
+				
+					<td class="DataView center In">126</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">4</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">3</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">16</td>
+			<td class="Reported">Cass Twp. South</td>
+			<td class="DataView center">740</td>
+			
+				
+				
+					<td class="DataView center NotReported">213</td>
+				
+			
+				
+				
+					<td class="DataView center In">509</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">10</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">1</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">6</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">1</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">18</td>
+			<td class="Reported">Delano Twp.</td>
+			<td class="DataView center">206</td>
+			
+				
+				
+					<td class="DataView center NotReported">74</td>
+				
+			
+				
+				
+					<td class="DataView center In">128</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">1</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">1</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">2</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">19</td>
+			<td class="Reported">East Norwegian Twp.</td>
+			<td class="DataView center">576</td>
+			
+				
+				
+					<td class="DataView center NotReported">200</td>
+				
+			
+				
+				
+					<td class="DataView center In">361</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">7</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">6</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">2</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">21</td>
+			<td class="Reported">Frackville North</td>
+			<td class="DataView center">598</td>
+			
+				
+				
+					<td class="DataView center NotReported">172</td>
+				
+			
+				
+				
+					<td class="DataView center In">401</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">14</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">9</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">2</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">22</td>
+			<td class="Reported">Frackville Middle</td>
+			<td class="DataView center">458</td>
+			
+				
+				
+					<td class="DataView center NotReported">148</td>
+				
+			
+				
+				
+					<td class="DataView center In">299</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">5</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">2</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">3</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">1</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">24</td>
+			<td class="Reported">Frackville South</td>
+			<td class="DataView center">858</td>
+			
+				
+				
+					<td class="DataView center NotReported">248</td>
+				
+			
+				
+				
+					<td class="DataView center In">587</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">9</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">9</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">3</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">2</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">27</td>
+			<td class="Reported">Gilberton</td>
+			<td class="DataView center">255</td>
+			
+				
+				
+					<td class="DataView center NotReported">88</td>
+				
+			
+				
+				
+					<td class="DataView center In">161</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">2</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">3</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">1</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">28</td>
+			<td class="Reported">Girardville</td>
+			<td class="DataView center">518</td>
+			
+				
+				
+					<td class="DataView center NotReported">202</td>
+				
+			
+				
+				
+					<td class="DataView center In">296</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">12</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">3</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">3</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">2</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">31</td>
+			<td class="Reported">Gordon</td>
+			<td class="DataView center">427</td>
+			
+				
+				
+					<td class="DataView center NotReported">111</td>
+				
+			
+				
+				
+					<td class="DataView center In">305</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">3</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">6</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">1</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">1</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">32</td>
+			<td class="Reported">Mahanoy City 1st</td>
+			<td class="DataView center">143</td>
+			
+				
+				
+					<td class="DataView center NotReported">46</td>
+				
+			
+				
+				
+					<td class="DataView center In">92</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">4</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">1</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">33</td>
+			<td class="Reported">Mahanoy City 2nd</td>
+			<td class="DataView center">373</td>
+			
+				
+				
+					<td class="DataView center NotReported">139</td>
+				
+			
+				
+				
+					<td class="DataView center In">222</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">6</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">4</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">1</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">1</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">36</td>
+			<td class="Reported">Mahanoy City 3rd</td>
+			<td class="DataView center">266</td>
+			
+				
+				
+					<td class="DataView center NotReported">96</td>
+				
+			
+				
+				
+					<td class="DataView center In">165</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">2</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">3</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">37</td>
+			<td class="Reported">Mahanoy City 4th</td>
+			<td class="DataView center">459</td>
+			
+				
+				
+					<td class="DataView center NotReported">165</td>
+				
+			
+				
+				
+					<td class="DataView center In">279</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">10</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">4</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">1</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">39</td>
+			<td class="Reported">Mahanoy Twp.</td>
+			<td class="DataView center">479</td>
+			
+				
+				
+					<td class="DataView center NotReported">128</td>
+				
+			
+				
+				
+					<td class="DataView center In">337</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">9</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">4</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">1</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">41</td>
+			<td class="Reported">Middleport</td>
+			<td class="DataView center">195</td>
+			
+				
+				
+					<td class="DataView center NotReported">50</td>
+				
+			
+				
+				
+					<td class="DataView center In">137</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">4</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">2</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">2</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">42</td>
+			<td class="Reported">Minersville 1st</td>
+			<td class="DataView center">419</td>
+			
+				
+				
+					<td class="DataView center NotReported">135</td>
+				
+			
+				
+				
+					<td class="DataView center In">271</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">7</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">3</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">3</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">43</td>
+			<td class="Reported">Minersville 2nd</td>
+			<td class="DataView center">532</td>
+			
+				
+				
+					<td class="DataView center NotReported">199</td>
+				
+			
+				
+				
+					<td class="DataView center In">310</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">10</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">7</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">5</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">1</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">44</td>
+			<td class="Reported">Minersville 3rd</td>
+			<td class="DataView center">431</td>
+			
+				
+				
+					<td class="DataView center NotReported">165</td>
+				
+			
+				
+				
+					<td class="DataView center In">247</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">11</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">4</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">2</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">2</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">45</td>
+			<td class="Reported">Minersville 4th</td>
+			<td class="DataView center">402</td>
+			
+				
+				
+					<td class="DataView center NotReported">137</td>
+				
+			
+				
+				
+					<td class="DataView center In">244</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">8</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">9</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">4</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">48</td>
+			<td class="Reported">New Castle Twp.</td>
+			<td class="DataView center">155</td>
+			
+				
+				
+					<td class="DataView center NotReported">54</td>
+				
+			
+				
+				
+					<td class="DataView center In">94</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">5</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">2</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">49</td>
+			<td class="Reported">New Philadelphia</td>
+			<td class="DataView center">512</td>
+			
+				
+				
+					<td class="DataView center NotReported">186</td>
+				
+			
+				
+				
+					<td class="DataView center In">302</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">13</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">7</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">4</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">51</td>
+			<td class="Reported">Norwegian Twp. Currans</td>
+			<td class="DataView center">989</td>
+			
+				
+				
+					<td class="DataView center NotReported">326</td>
+				
+			
+				
+				
+					<td class="DataView center In">642</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">15</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">4</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">1</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">1</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">52</td>
+			<td class="Reported">Norwegian Twp. Marlin</td>
+			<td class="DataView center">507</td>
+			
+				
+				
+					<td class="DataView center NotReported">147</td>
+				
+			
+				
+				
+					<td class="DataView center In">350</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">6</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">2</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">1</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">1</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">53</td>
+			<td class="Reported">Palo Alto 1st Ward</td>
+			<td class="DataView center">201</td>
+			
+				
+				
+					<td class="DataView center NotReported">63</td>
+				
+			
+				
+				
+					<td class="DataView center In">128</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">7</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">1</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">1</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">1</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">54</td>
+			<td class="Reported">Palo Alto 2nd Ward</td>
+			<td class="DataView center">272</td>
+			
+				
+				
+					<td class="DataView center NotReported">85</td>
+				
+			
+				
+				
+					<td class="DataView center In">179</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">5</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">1</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">1</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">1</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">55</td>
+			<td class="Reported">Port Carbon 1st</td>
+			<td class="DataView center">277</td>
+			
+				
+				
+					<td class="DataView center NotReported">103</td>
+				
+			
+				
+				
+					<td class="DataView center In">166</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">6</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">1</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">1</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">56</td>
+			<td class="Reported">Port Carbon 2nd</td>
+			<td class="DataView center">622</td>
+			
+				
+				
+					<td class="DataView center NotReported">178</td>
+				
+			
+				
+				
+					<td class="DataView center In">428</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">10</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">6</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">57</td>
+			<td class="Reported">Reilly Twp.</td>
+			<td class="DataView center">359</td>
+			
+				
+				
+					<td class="DataView center NotReported">76</td>
+				
+			
+				
+				
+					<td class="DataView center In">273</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">4</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">3</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">1</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">2</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">58</td>
+			<td class="Reported">Ryan Twp.</td>
+			<td class="DataView center">950</td>
+			
+				
+				
+					<td class="DataView center NotReported">226</td>
+				
+			
+				
+				
+					<td class="DataView center In">699</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">12</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">9</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">3</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">1</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">60</td>
+			<td class="Reported">Saint Clair Middle</td>
+			<td class="DataView center">357</td>
+			
+				
+				
+					<td class="DataView center NotReported">147</td>
+				
+			
+				
+				
+					<td class="DataView center In">197</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">8</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">4</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">1</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">61</td>
+			<td class="Reported">Saint Clair South</td>
+			<td class="DataView center">555</td>
+			
+				
+				
+					<td class="DataView center NotReported">203</td>
+				
+			
+				
+				
+					<td class="DataView center In">326</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">15</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">9</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">2</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">63</td>
+			<td class="Reported">Saint Clair North</td>
+			<td class="DataView center">446</td>
+			
+				
+				
+					<td class="DataView center NotReported">159</td>
+				
+			
+				
+				
+					<td class="DataView center In">273</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">5</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">5</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">4</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">64</td>
+			<td class="Reported">Shenandoah 1st</td>
+			<td class="DataView center">97</td>
+			
+				
+				
+					<td class="DataView center NotReported">26</td>
+				
+			
+				
+				
+					<td class="DataView center In">67</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">2</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">2</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">65</td>
+			<td class="Reported">Shenandoah 2nd</td>
+			<td class="DataView center">205</td>
+			
+				
+				
+					<td class="DataView center NotReported">69</td>
+				
+			
+				
+				
+					<td class="DataView center In">130</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">4</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">2</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">69</td>
+			<td class="Reported">Shenandoah 3rd</td>
+			<td class="DataView center">390</td>
+			
+				
+				
+					<td class="DataView center NotReported">137</td>
+				
+			
+				
+				
+					<td class="DataView center In">233</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">9</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">8</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">2</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">1</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">70</td>
+			<td class="Reported">Shenandoah 4th</td>
+			<td class="DataView center">225</td>
+			
+				
+				
+					<td class="DataView center NotReported">86</td>
+				
+			
+				
+				
+					<td class="DataView center In">129</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">6</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">2</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">2</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">72</td>
+			<td class="Reported">Shenandoah 5th</td>
+			<td class="DataView center">239</td>
+			
+				
+				
+					<td class="DataView center NotReported">81</td>
+				
+			
+				
+				
+					<td class="DataView center In">151</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">4</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">2</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">1</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">74</td>
+			<td class="Reported">Shenandoah 6th</td>
+			<td class="DataView center">80</td>
+			
+				
+				
+					<td class="DataView center NotReported">24</td>
+				
+			
+				
+				
+					<td class="DataView center In">56</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">75</td>
+			<td class="Reported">West Mahanoy Twp. Altamont</td>
+			<td class="DataView center">466</td>
+			
+				
+				
+					<td class="DataView center NotReported">121</td>
+				
+			
+				
+				
+					<td class="DataView center In">332</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">6</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">5</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">2</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">76</td>
+			<td class="Reported">West Mahanoy Twp. 2nd</td>
+			<td class="DataView center">681</td>
+			
+				
+				
+					<td class="DataView center NotReported">206</td>
+				
+			
+				
+				
+					<td class="DataView center In">452</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">15</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">7</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">1</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">79</td>
+			<td class="Reported">West Mahanoy Twp. 1st</td>
+			<td class="DataView center">220</td>
+			
+				
+				
+					<td class="DataView center NotReported">77</td>
+				
+			
+				
+				
+					<td class="DataView center In">136</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">5</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">1</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">1</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">80</td>
+			<td class="Reported">Auburn</td>
+			<td class="DataView center">367</td>
+			
+				
+				
+					<td class="DataView center NotReported">90</td>
+				
+			
+				
+				
+					<td class="DataView center In">258</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">11</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">5</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">3</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">81</td>
+			<td class="Reported">Coaldale East</td>
+			<td class="DataView center">483</td>
+			
+				
+				
+					<td class="DataView center NotReported">164</td>
+				
+			
+				
+				
+					<td class="DataView center In">291</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">14</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">9</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">5</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">83</td>
+			<td class="Reported">Coaldale West</td>
+			<td class="DataView center">521</td>
+			
+				
+				
+					<td class="DataView center NotReported">151</td>
+				
+			
+				
+				
+					<td class="DataView center In">352</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">5</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">8</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">5</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">84</td>
+			<td class="Reported">Deer Lake</td>
+			<td class="DataView center">447</td>
+			
+				
+				
+					<td class="DataView center NotReported">112</td>
+				
+			
+				
+				
+					<td class="DataView center In">322</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">5</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">4</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">4</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">85</td>
+			<td class="Reported">East Brunswick Twp.</td>
+			<td class="DataView center">1178</td>
+			
+				
+				
+					<td class="DataView center NotReported">250</td>
+				
+			
+				
+				
+					<td class="DataView center In">904</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">16</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">6</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">2</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">88</td>
+			<td class="Reported">East Union Twp.</td>
+			<td class="DataView center">1017</td>
+			
+				
+				
+					<td class="DataView center NotReported">211</td>
+				
+			
+				
+				
+					<td class="DataView center In">766</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">18</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">11</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">10</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">1</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">89</td>
+			<td class="Reported">Kline Twp.</td>
+			<td class="DataView center">803</td>
+			
+				
+				
+					<td class="DataView center NotReported">182</td>
+				
+			
+				
+				
+					<td class="DataView center In">603</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">9</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">6</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">3</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">91</td>
+			<td class="Reported">Landingville</td>
+			<td class="DataView center">95</td>
+			
+				
+				
+					<td class="DataView center NotReported">14</td>
+				
+			
+				
+				
+					<td class="DataView center In">79</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">2</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">92</td>
+			<td class="Reported">McAdoo 1st</td>
+			<td class="DataView center">430</td>
+			
+				
+				
+					<td class="DataView center NotReported">115</td>
+				
+			
+				
+				
+					<td class="DataView center In">304</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">4</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">3</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">4</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">93</td>
+			<td class="Reported">McAdoo 2nd</td>
+			<td class="DataView center">528</td>
+			
+				
+				
+					<td class="DataView center NotReported">160</td>
+				
+			
+				
+				
+					<td class="DataView center In">361</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">3</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">2</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">2</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">96</td>
+			<td class="Reported">New Ringgold</td>
+			<td class="DataView center">129</td>
+			
+				
+				
+					<td class="DataView center NotReported">26</td>
+				
+			
+				
+				
+					<td class="DataView center In">101</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">2</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">97</td>
+			<td class="Reported">North Union Twp.</td>
+			<td class="DataView center">798</td>
+			
+				
+				
+					<td class="DataView center NotReported">181</td>
+				
+			
+				
+				
+					<td class="DataView center In">592</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">13</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">11</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">1</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">99</td>
+			<td class="Reported">Port Clinton</td>
+			<td class="DataView center">142</td>
+			
+				
+				
+					<td class="DataView center NotReported">37</td>
+				
+			
+				
+				
+					<td class="DataView center In">99</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">2</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">3</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">1</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">100</td>
+			<td class="Reported">Ringtown</td>
+			<td class="DataView center">422</td>
+			
+				
+				
+					<td class="DataView center NotReported">84</td>
+				
+			
+				
+				
+					<td class="DataView center In">322</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">7</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">6</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">2</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">1</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">101</td>
+			<td class="Reported">Rush Twp. East</td>
+			<td class="DataView center">997</td>
+			
+				
+				
+					<td class="DataView center NotReported">278</td>
+				
+			
+				
+				
+					<td class="DataView center In">692</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">14</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">9</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">2</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">2</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">102</td>
+			<td class="Reported">Rush Twp. West</td>
+			<td class="DataView center">884</td>
+			
+				
+				
+					<td class="DataView center NotReported">191</td>
+				
+			
+				
+				
+					<td class="DataView center In">678</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">12</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">2</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">1</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">103</td>
+			<td class="Reported">Rush Twp. Elixir</td>
+			<td class="DataView center">295</td>
+			
+				
+				
+					<td class="DataView center NotReported">64</td>
+				
+			
+				
+				
+					<td class="DataView center In">225</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">3</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">1</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">1</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">1</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">105</td>
+			<td class="Reported">Schuylkill Twp.</td>
+			<td class="DataView center">633</td>
+			
+				
+				
+					<td class="DataView center NotReported">163</td>
+				
+			
+				
+				
+					<td class="DataView center In">457</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">9</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">3</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">1</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">107</td>
+			<td class="Reported">Tamaqua 1st</td>
+			<td class="DataView center">769</td>
+			
+				
+				
+					<td class="DataView center NotReported">230</td>
+				
+			
+				
+				
+					<td class="DataView center In">506</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">18</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">9</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">6</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">109</td>
+			<td class="Reported">Tamaqua 2nd</td>
+			<td class="DataView center">774</td>
+			
+				
+				
+					<td class="DataView center NotReported">202</td>
+				
+			
+				
+				
+					<td class="DataView center In">531</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">24</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">9</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">7</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">1</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">111</td>
+			<td class="Reported">Tamaqua 3rd</td>
+			<td class="DataView center">790</td>
+			
+				
+				
+					<td class="DataView center NotReported">248</td>
+				
+			
+				
+				
+					<td class="DataView center In">518</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">17</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">5</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">2</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">112</td>
+			<td class="Reported">Tamaqua 4th</td>
+			<td class="DataView center">529</td>
+			
+				
+				
+					<td class="DataView center NotReported">134</td>
+				
+			
+				
+				
+					<td class="DataView center In">373</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">13</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">6</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">3</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">113</td>
+			<td class="Reported">Union Twp.</td>
+			<td class="DataView center">789</td>
+			
+				
+				
+					<td class="DataView center NotReported">170</td>
+				
+			
+				
+				
+					<td class="DataView center In">592</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">16</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">8</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">2</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">1</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">114</td>
+			<td class="Reported">Walker Twp.</td>
+			<td class="DataView center">598</td>
+			
+				
+				
+					<td class="DataView center NotReported">99</td>
+				
+			
+				
+				
+					<td class="DataView center In">481</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">14</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">2</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">2</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">115</td>
+			<td class="Reported">West Brunswick Twp. North</td>
+			<td class="DataView center">1198</td>
+			
+				
+				
+					<td class="DataView center NotReported">331</td>
+				
+			
+				
+				
+					<td class="DataView center In">845</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">13</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">6</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">2</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">1</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">116</td>
+			<td class="Reported">West Brunswick Twp. South</td>
+			<td class="DataView center">871</td>
+			
+				
+				
+					<td class="DataView center NotReported">178</td>
+				
+			
+				
+				
+					<td class="DataView center In">662</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">17</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">10</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">3</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">1</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">117</td>
+			<td class="Reported">West Penn Twp. 2nd</td>
+			<td class="DataView center">639</td>
+			
+				
+				
+					<td class="DataView center NotReported">113</td>
+				
+			
+				
+				
+					<td class="DataView center In">513</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">9</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">3</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">1</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">118</td>
+			<td class="Reported">West Penn Twp. 1st</td>
+			<td class="DataView center">1270</td>
+			
+				
+				
+					<td class="DataView center NotReported">277</td>
+				
+			
+				
+				
+					<td class="DataView center In">957</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">18</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">12</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">6</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">119</td>
+			<td class="Reported">Barry Twp.</td>
+			<td class="DataView center">556</td>
+			
+				
+				
+					<td class="DataView center NotReported">103</td>
+				
+			
+				
+				
+					<td class="DataView center In">429</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">8</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">13</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">3</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">120</td>
+			<td class="Reported">Cressona</td>
+			<td class="DataView center">818</td>
+			
+				
+				
+					<td class="DataView center NotReported">185</td>
+				
+			
+				
+				
+					<td class="DataView center In">592</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">25</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">7</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">5</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">4</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">122</td>
+			<td class="Reported">Eldred Twp.</td>
+			<td class="DataView center">381</td>
+			
+				
+				
+					<td class="DataView center NotReported">47</td>
+				
+			
+				
+				
+					<td class="DataView center In">327</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">3</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">4</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">123</td>
+			<td class="Reported">Foster Twp.</td>
+			<td class="DataView center">149</td>
+			
+				
+				
+					<td class="DataView center NotReported">36</td>
+				
+			
+				
+				
+					<td class="DataView center In">107</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">1</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">2</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">2</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">1</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">124</td>
+			<td class="Reported">Frailey Twp.</td>
+			<td class="DataView center">202</td>
+			
+				
+				
+					<td class="DataView center NotReported">51</td>
+				
+			
+				
+				
+					<td class="DataView center In">146</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">2</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">2</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">1</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">125</td>
+			<td class="Reported">Hegins Twp. East</td>
+			<td class="DataView center">995</td>
+			
+				
+				
+					<td class="DataView center NotReported">154</td>
+				
+			
+				
+				
+					<td class="DataView center In">815</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">8</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">16</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">2</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">126</td>
+			<td class="Reported">Hegins Twp. West</td>
+			<td class="DataView center">961</td>
+			
+				
+				
+					<td class="DataView center NotReported">178</td>
+				
+			
+				
+				
+					<td class="DataView center In">759</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">15</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">6</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">1</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">2</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">127</td>
+			<td class="Reported">Hubley Twp.</td>
+			<td class="DataView center">423</td>
+			
+				
+				
+					<td class="DataView center NotReported">64</td>
+				
+			
+				
+				
+					<td class="DataView center In">354</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">3</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">2</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">128</td>
+			<td class="Reported">Mechanicsville</td>
+			<td class="DataView center">217</td>
+			
+				
+				
+					<td class="DataView center NotReported">74</td>
+				
+			
+				
+				
+					<td class="DataView center In">137</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">3</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">3</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">129</td>
+			<td class="Reported">Mt. Carbon</td>
+			<td class="DataView center">42</td>
+			
+				
+				
+					<td class="DataView center NotReported">19</td>
+				
+			
+				
+				
+					<td class="DataView center In">20</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">1</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">1</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">1</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">130</td>
+			<td class="Reported">North Manheim Twp. 3rd</td>
+			<td class="DataView center">540</td>
+			
+				
+				
+					<td class="DataView center NotReported">112</td>
+				
+			
+				
+				
+					<td class="DataView center In">414</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">9</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">5</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">131</td>
+			<td class="Reported">North Manheim Twp. 2nd</td>
+			<td class="DataView center">751</td>
+			
+				
+				
+					<td class="DataView center NotReported">187</td>
+				
+			
+				
+				
+					<td class="DataView center In">538</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">21</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">2</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">2</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">1</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">132</td>
+			<td class="Reported">Orwigsburg 1st</td>
+			<td class="DataView center">731</td>
+			
+				
+				
+					<td class="DataView center NotReported">198</td>
+				
+			
+				
+				
+					<td class="DataView center In">502</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">17</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">10</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">4</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">133</td>
+			<td class="Reported">Orwigsburg 2nd</td>
+			<td class="DataView center">966</td>
+			
+				
+				
+					<td class="DataView center NotReported">285</td>
+				
+			
+				
+				
+					<td class="DataView center In">639</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">31</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">3</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">6</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">2</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">134</td>
+			<td class="Reported">Pine Grove North</td>
+			<td class="DataView center">640</td>
+			
+				
+				
+					<td class="DataView center NotReported">176</td>
+				
+			
+				
+				
+					<td class="DataView center In">434</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">21</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">3</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">6</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">136</td>
+			<td class="Reported">Pine Grove South</td>
+			<td class="DataView center">402</td>
+			
+				
+				
+					<td class="DataView center NotReported">99</td>
+				
+			
+				
+				
+					<td class="DataView center In">287</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">9</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">6</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">1</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">137</td>
+			<td class="Reported">Pine Grove Twp. 1st</td>
+			<td class="DataView center">1128</td>
+			
+				
+				
+					<td class="DataView center NotReported">176</td>
+				
+			
+				
+				
+					<td class="DataView center In">921</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">14</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">11</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">5</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">1</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">138</td>
+			<td class="Reported">Pine Grove Twp. 2nd</td>
+			<td class="DataView center">1123</td>
+			
+				
+				
+					<td class="DataView center NotReported">210</td>
+				
+			
+				
+				
+					<td class="DataView center In">888</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">18</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">5</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">2</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">139</td>
+			<td class="Reported">Porter Twp. East</td>
+			<td class="DataView center">647</td>
+			
+				
+				
+					<td class="DataView center NotReported">107</td>
+				
+			
+				
+				
+					<td class="DataView center In">534</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">3</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">3</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">140</td>
+			<td class="Reported">Porter Twp. West</td>
+			<td class="DataView center">573</td>
+			
+				
+				
+					<td class="DataView center NotReported">86</td>
+				
+			
+				
+				
+					<td class="DataView center In">473</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">5</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">5</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">4</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">141</td>
+			<td class="Reported">Pottsville 1st</td>
+			<td class="DataView center">271</td>
+			
+				
+				
+					<td class="DataView center NotReported">96</td>
+				
+			
+				
+				
+					<td class="DataView center In">169</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">3</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">3</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">144</td>
+			<td class="Reported">Pottsville 2nd</td>
+			<td class="DataView center">509</td>
+			
+				
+				
+					<td class="DataView center NotReported">215</td>
+				
+			
+				
+				
+					<td class="DataView center In">272</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">8</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">11</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">2</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">1</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">146</td>
+			<td class="Reported">Pottsville 3-2</td>
+			<td class="DataView center">219</td>
+			
+				
+				
+					<td class="DataView center In">109</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">98</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">7</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">4</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">1</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">147</td>
+			<td class="Reported">Pottsville 3-1</td>
+			<td class="DataView center">495</td>
+			
+				
+				
+					<td class="DataView center NotReported">200</td>
+				
+			
+				
+				
+					<td class="DataView center In">275</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">14</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">4</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">2</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">148</td>
+			<td class="Reported">Pottsville 3-3</td>
+			<td class="DataView center">324</td>
+			
+				
+				
+					<td class="DataView center NotReported">112</td>
+				
+			
+				
+				
+					<td class="DataView center In">206</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">5</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">1</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">150</td>
+			<td class="Reported">Pottsville 4th</td>
+			<td class="DataView center">604</td>
+			
+				
+				
+					<td class="DataView center NotReported">271</td>
+				
+			
+				
+				
+					<td class="DataView center In">304</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">15</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">12</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">2</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">153</td>
+			<td class="Reported">Pottsville 5-1</td>
+			<td class="DataView center">438</td>
+			
+				
+				
+					<td class="DataView center NotReported">185</td>
+				
+			
+				
+				
+					<td class="DataView center In">234</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">14</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">4</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">1</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">155</td>
+			<td class="Reported">Pottsville 5-2</td>
+			<td class="DataView center">589</td>
+			
+				
+				
+					<td class="DataView center NotReported">223</td>
+				
+			
+				
+				
+					<td class="DataView center In">342</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">14</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">7</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">1</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">2</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">157</td>
+			<td class="Reported">Pottsville 6th</td>
+			<td class="DataView center">538</td>
+			
+				
+				
+					<td class="DataView center NotReported">200</td>
+				
+			
+				
+				
+					<td class="DataView center In">314</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">13</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">5</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">5</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">1</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">159</td>
+			<td class="Reported">Pottsville 7-1</td>
+			<td class="DataView center">897</td>
+			
+				
+				
+					<td class="DataView center NotReported">374</td>
+				
+			
+				
+				
+					<td class="DataView center In">491</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">21</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">6</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">3</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">2</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">161</td>
+			<td class="Reported">Pottsville 7-2</td>
+			<td class="DataView center">886</td>
+			
+				
+				
+					<td class="DataView center NotReported">402</td>
+				
+			
+				
+				
+					<td class="DataView center In">457</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">12</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">9</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">4</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">2</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">162</td>
+			<td class="Reported">Schuylkill Haven North</td>
+			<td class="DataView center">587</td>
+			
+				
+				
+					<td class="DataView center NotReported">172</td>
+				
+			
+				
+				
+					<td class="DataView center In">392</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">13</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">7</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">1</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">2</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">163</td>
+			<td class="Reported">Schuylkill Haven East</td>
+			<td class="DataView center">756</td>
+			
+				
+				
+					<td class="DataView center NotReported">209</td>
+				
+			
+				
+				
+					<td class="DataView center In">522</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">16</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">5</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">4</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">164</td>
+			<td class="Reported">Schuylkill Haven South</td>
+			<td class="DataView center">667</td>
+			
+				
+				
+					<td class="DataView center NotReported">179</td>
+				
+			
+				
+				
+					<td class="DataView center In">465</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">14</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">5</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">2</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">2</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">165</td>
+			<td class="Reported">Schuylkill Haven West</td>
+			<td class="DataView center">671</td>
+			
+				
+				
+					<td class="DataView center NotReported">180</td>
+				
+			
+				
+				
+					<td class="DataView center In">476</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">10</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">3</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">1</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">1</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">166</td>
+			<td class="Reported">South Manheim Twp.</td>
+			<td class="DataView center">1787</td>
+			
+				
+				
+					<td class="DataView center NotReported">388</td>
+				
+			
+				
+				
+					<td class="DataView center In">1339</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">36</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">23</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">1</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">167</td>
+			<td class="Reported">Tower City</td>
+			<td class="DataView center">583</td>
+			
+				
+				
+					<td class="DataView center NotReported">102</td>
+				
+			
+				
+				
+					<td class="DataView center In">462</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">13</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">4</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">2</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">169</td>
+			<td class="Reported">Tremont</td>
+			<td class="DataView center">745</td>
+			
+				
+				
+					<td class="DataView center NotReported">149</td>
+				
+			
+				
+				
+					<td class="DataView center In">563</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">16</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">11</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">6</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">171</td>
+			<td class="Reported">Tremont Twp.</td>
+			<td class="DataView center">119</td>
+			
+				
+				
+					<td class="DataView center NotReported">16</td>
+				
+			
+				
+				
+					<td class="DataView center In">99</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">3</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">1</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">172</td>
+			<td class="Reported">Upper Mahantongo Twp.</td>
+			<td class="DataView center">350</td>
+			
+				
+				
+					<td class="DataView center NotReported">51</td>
+				
+			
+				
+				
+					<td class="DataView center In">295</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">1</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">3</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">174</td>
+			<td class="Reported">Washington Twp. North</td>
+			<td class="DataView center">919</td>
+			
+				
+				
+					<td class="DataView center NotReported">186</td>
+				
+			
+				
+				
+					<td class="DataView center In">710</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">13</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">6</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">2</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">2</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">175</td>
+			<td class="Reported">Washington Twp. South</td>
+			<td class="DataView center">823</td>
+			
+				
+				
+					<td class="DataView center NotReported">146</td>
+				
+			
+				
+				
+					<td class="DataView center In">659</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">8</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">7</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">3</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">176</td>
+			<td class="Reported">Wayne Twp. 1st</td>
+			<td class="DataView center">1069</td>
+			
+				
+				
+					<td class="DataView center NotReported">237</td>
+				
+			
+				
+				
+					<td class="DataView center In">795</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">20</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">10</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">4</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">3</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">177</td>
+			<td class="Reported">Wayne Twp. 2nd</td>
+			<td class="DataView center">1080</td>
+			
+				
+				
+					<td class="DataView center NotReported">229</td>
+				
+			
+				
+				
+					<td class="DataView center In">823</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">16</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">8</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">3</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">1</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">178</td>
+			<td class="Reported">North Manheim Twp. 1st</td>
+			<td class="DataView center">927</td>
+			
+				
+				
+					<td class="DataView center NotReported">242</td>
+				
+			
+				
+				
+					<td class="DataView center In">653</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">24</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">2</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">3</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">3</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">179</td>
+			<td class="Reported">West Penn Twp. 3rd</td>
+			<td class="DataView center">928</td>
+			
+				
+				
+					<td class="DataView center NotReported">157</td>
+				
+			
+				
+				
+					<td class="DataView center In">752</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">9</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">5</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">4</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">1</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	 
+		
+		<tr class="DataView ">
+			<td class="ColHead VerticalTop Reported">180</td>
+			<td class="Reported">Wayne Twp. 3rd</td>
+			<td class="DataView center">1089</td>
+			
+				
+				
+					<td class="DataView center NotReported">267</td>
+				
+			
+				
+				
+					<td class="DataView center In">796</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">16</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">8</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">2</td>
+				
+			
+				
+				
+					<td class="DataView center NotReported">0</td>
+				
+			
+				
+				
+			
+		</tr>
+	  
+	
+</tbody></table>
+
+
+
+
+
+<h5 style="margin-top: 0" align="center">
+	Copyright © 2025 [ County of Schuylkill   ]. All rights reserved.
+</h5>
+
+
+</body></html>
