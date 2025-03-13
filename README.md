@@ -3,8 +3,9 @@ The goal of this project is to gather, parse, process, and validate the precinct
 
 As of now, there is a consistently performing prompt-based approach for parsing "single precinct per page" (SPPP) type PDF return documents.
 
-Right now I have links to the data for all counties but the following 6:
+Right now I have links to the data for all counties but the following 7:
 * 015	Bradford County
+* 023   Cameron County
 * 031	Clarion County
 * 037	Columbia County
 * 043	Dauphin County
@@ -36,7 +37,7 @@ Right now I have links to the data for all counties but the following 6:
 The following table contains the current progress in parsing and processing the county precinct data.
 
 | FIPS | County                | Raw Data | Src                                                                                                                                | Type         | Parsed | Notes                                                                                                                                      |
-| ---- | --------------------- | -------- | ---------------------------------------------------------------------------------------------------------------------------------- | ------------ | ------ |--------------------------------------------------------------------------------------------------------------------------------------------|
+| ---- | --------------------- |----------| ---------------------------------------------------------------------------------------------------------------------------------- | ------------ | ------ |--------------------------------------------------------------------------------------------------------------------------------------------|
 | 001  | Adams County          | X        | [Link](https://www.adamscountypa.gov/departments/electionsandvoterregistration/electionresults)                                    | SPPP         | X      |                                                                                                                                            |
 | 003  | Allegheny County      | X        |                                                                                                                                    | CEXML        | X      |                                                                                                                                            |
 | 005  | Armstrong County      | X        |                                                                                                                                    | Folder       |        |                                                                                                                                            |
@@ -48,7 +49,7 @@ The following table contains the current progress in parsing and processing the 
 | 017  | Bucks County          | X        |                                                                                                                                    | UNQ?         |        |                                                                                                                                            |
 | 019  | Butler County         | X        | [Link](https://www.butlercountypa.gov/683/Election-Returns-2021---Present)                                                         | SPPP         | X      |                                                                                                                                            |
 | 021  | Cambria County        | X        |                                                                                                                                    | CEXML        | X      |                                                                                                                                            |
-| 023  | Cameron County        | X        |                                                                                                                                    | Folder       |        |                                                                                                                                            |
+| 023  | Cameron County        | M        |                                                                                                                                    | Folder       |        | Looks like we had the primary data. Still, pictures of things in pdfs. Yay.                                                                |
 | 025  | Carbon County         | X        |                                                                                                                                    | TERROR       |        |                                                                                                                                            |
 | 027  | Centre County         | X        | [Link](https://centrecountypa.gov/3498/2024-General-Election-Official-Results)                                                     | SPPP         | X      |                                                                                                                                            |
 | 029  | Chester County        | X        | [Link](https://www.chesco.org/156/Voter-Services)                                                                                  | SPPP         | X      |                                                                                                                                            |
